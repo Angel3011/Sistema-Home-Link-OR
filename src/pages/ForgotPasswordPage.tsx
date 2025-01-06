@@ -44,12 +44,14 @@ export function ForgotPasswordPage() {
       </form>
 
       <button
-        onClick={() => navigate('/LoginForm.tsx')}
-        className="w-full flex items-center justify-center text-blue-500 py-3 rounded hover:bg-blue-50 transition-colors font-semibold"
-      >
-        <ArrowLeft className="text-center text-sm" />
-        Regresar al login
-      </button>
+  onClick={() => navigate('/dashboard/login')}
+  className="w-full flex items-center justify-center text-blue-500 py-3 rounded hover:bg-blue-50 transition-colors font-semibold"
+>
+  <ArrowLeft className="text-center text-sm" />
+  Regresar al login
+</button>
     </div>
   );
 }
+
+export default ForgotPasswordPage;

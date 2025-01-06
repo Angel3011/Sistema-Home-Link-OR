@@ -7,6 +7,7 @@ import { ForgotPasswordPage } from './pages/ForgotPasswordPage';
 import { VerifyCodePage } from './pages/VerifyCodePage';
 import { ResetPasswordPage } from './pages/ResetPasswordPage';
 import { DashboardPage } from './pages/DashboardPage';
+import { LoginForm } from './components/LoginForm';
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
           <Route path="/forgot-password" element={<ForgotPasswordPage />} />
           <Route path="/verify-code" element={<VerifyCodePage />} />
           <Route path="/reset-password" element={<ResetPasswordPage />} />
+          <Route path="/dashboard/login" element={<LoginForm />} />
+          <Route path="/forgot-password" element={<ForgotPasswordPage />} />
         </Route>
         <Route path="/dashboard" element={<DashboardPage />} />
       </Routes>
